@@ -1,0 +1,5 @@
+SELECT customer_number                    /*Lấy danh sách mã khách hàng từ bảng Orders*/
+FROM Orders                               
+GROUP BY customer_number                  /*Gom đơn hàng của từng người lại thành từng nhóm riêng biệt để dễ quản lý*/
+ORDER BY COUNT(order_number) DESC         /*Đếm số đơn của từng người rồi xếp hạng từ nhiều nhất xuống ít nhất*/
+LIMIT 1;                                  /*Chỉ lấy ra 1 người đứng đầu (người có số đơn lớn nhất) để hiển thị*/
