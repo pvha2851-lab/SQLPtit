@@ -1,0 +1,3 @@
+SELECT name                                                  /*Lấy thông tin ở cột "tên" (name) để hiển thị ra kết quả*/
+FROM Customer                                                /*Tìm dữ liệu bên trong bảng có tên là "Customer"*/
+WHERE referee_id !=2 OR referee_id IS NULL;                  /*Lọc ra những người có mã người giới thiệu KHÁC 2 HOẶC những người KHÔNG CÓ ai giới thiệu (ô dữ liệu bị trống/null)*/
