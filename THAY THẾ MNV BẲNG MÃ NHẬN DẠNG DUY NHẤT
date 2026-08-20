@@ -1,0 +1,12 @@
+SELECT eu.unique_id,e.name
+FROM Employees e
+LEFT JOIN EmployeeUNI eu ON e.id=eu.id;
+/*Lấy bảng Employees làm gốc 
+và ghép với bảng EmployeeUNI
+Lệnh LEFT JOIN đảm bảo giữ lại 
+toàn bộ nhân viên ở bảng gốc*/
+/*ON  Ghép dữ liệu dựa trên điểm chung là mã id*/
+/*Lấy bảng Employees làm gốc và 
+ghép với bảng EmployeeUNI
+Lệnh LEFT JOIN đảm bảo giữ lại 
+toàn bộ nhân viên ở bảng gốc*/
