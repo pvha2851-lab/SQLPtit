@@ -1,0 +1,12 @@
+SELECT DISTINCT author_id AS id
+/*Lệnh DISTINCT giúp loại bỏ 
+các kết quả bị trùng lặp
+đảm bảo mỗi người chỉ xuất 
+hiện 1 lần duy nhất trong danh sách*/
+FROM Views
+WHERE author_id = viewer_id
+ORDER BY id ASC
+/*Sắp xếp danh sách kết quả theo id 
+với thứ tự tăng dần 
+ACS tăng dần
+DESC giảm dần*/
