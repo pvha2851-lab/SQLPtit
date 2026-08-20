@@ -1,0 +1,8 @@
+SELECT m.name
+FROM Employee m
+JOIN Employee e ON m.id = e.managerId
+/*Nhân bản bảng
+gọi e là Nhân viên và m là Quản lý*/
+GROUP BY m.id,m.name
+/*Gom nhóm dữ liệu theo từng người quản lý*/
+HAVING COUNT(e.id)>=5;
