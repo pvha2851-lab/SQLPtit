@@ -1,0 +1,9 @@
+SELECT p.product_name,s.year,s.price
+/*Chọn ra 3 cột cần hiển thị từ 2 bảng đã ghép*/
+FROM Sales s
+JOIN Product p ON s.product_id = p.product_id
+/*Kết nối 2 bảng Sales và Product với nhau 
+(đặt tên tắt là s và p)*/
+/*Ghép dữ liệu dựa trên điểm chung là product_id*/
+ORDER BY s.sale_id ASC;
+/*Sắp xếp kết quả theo mã giao dịch tăng dần*/
