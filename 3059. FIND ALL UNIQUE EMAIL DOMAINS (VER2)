@@ -1,0 +1,9 @@
+SELECT SUBSTRING_INDEX(email,'@',-1) AS email_domain,
+       COUNT(id) AS count
+/*Cắt chuỗi lấy phần tên miền sau chữ @*/
+FROM Emails
+WHERE email LIKE '%.com'
+/*Chỉ giữ lại các email đuôi .com*/
+GROUP BY email_domain
+/*Gom nhóm theo tên miền*/
+ORDER BY email_domain ASC;
