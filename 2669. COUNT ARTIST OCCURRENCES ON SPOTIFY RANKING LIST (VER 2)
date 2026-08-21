@@ -1,0 +1,8 @@
+SELECT artist,COUNT(id) AS occurrences
+/*COUNT(artist):nhóm theo artist
+COUNT(id):Vì id là khóa chính
+COUNT(*):là một cách rất phổ biến,đếm trực tiếp số dòng*/
+FROM Spotify
+GROUP BY artist
+ORDER BY occurrences DESC,
+         artist ASC;
