@@ -1,0 +1,4 @@
+SELECT DISTINCT city
+FROM Customer ;
+/*DISTINCT-Từ khóa này dùng để 
+loại bỏ các giá trị trùng lặp*/
