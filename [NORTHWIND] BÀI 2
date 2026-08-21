@@ -1,0 +1,6 @@
+SELECT * FROM Customer WHERE city = 'Berlin';
+/*SELECT *Lấy tất cả các cột 
+thông tin của khách hàng 
+(có thể thay dấu * bằng tên 
+cột cụ thể như companyName contactName 
+nếu chỉ muốn xem tên)*/
