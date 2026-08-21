@@ -1,0 +1,7 @@
+SELECT user_id,
+       CONCAT(UPPER(SUBSTRING(name,1,1)),LOWER(SUBSTRING(name,2))) AS name
+/*CONCAT:Nối hai phần vừa cắt lại 
+với nhau thành chuỗi hoàn chỉnh*/
+FROM Users
+ORDER BY user_id;
+/*Sắp xếp kết quả tăng dần theo user_id*/
