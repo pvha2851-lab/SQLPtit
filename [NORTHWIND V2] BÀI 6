@@ -1,0 +1,3 @@
+SELECT *
+FROM SalesOrder
+WHERE freight>=50 AND freight<=100;
