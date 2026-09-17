@@ -1,0 +1,5 @@
+SELECT custId,COUNT(custId) AS OrderCount
+FROM SalesOrder
+GROUP BY custId
+ORDER BY OrderCount DESC
+LIMIT 5;
