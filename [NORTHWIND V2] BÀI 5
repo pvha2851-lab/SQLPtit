@@ -1,0 +1,3 @@
+SELECT * 
+FROM Employee
+WHERE LEFT(lastname,1) IN('A','B');
