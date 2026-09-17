@@ -1,0 +1,4 @@
+SELECT city,COUNT(custId) AS CustomerCount
+FROM Customer
+GROUP BY city
+HAVING COUNT(custId)>=2
