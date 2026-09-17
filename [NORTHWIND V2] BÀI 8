@@ -1,0 +1,4 @@
+SELECT YEAR(orderDate) AS OrderYear,
+       COUNT(OrderId) AS OrderCount
+FROM SalesOrder
+GROUP BY YEAR(orderDate);
