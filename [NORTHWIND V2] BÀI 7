@@ -1,0 +1,3 @@
+SELECT *
+FROM Customer
+WHERE RIGHT(contactName,3) = 'son';
